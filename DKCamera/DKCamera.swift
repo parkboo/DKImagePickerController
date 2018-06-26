@@ -394,7 +394,7 @@ open class DKCamera: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 self.captureSession.removeInput(oldInput)
             }
             
-            if let frontInput = try? AVCaptureDeviceInput(device: currentDevice) {
+             if let frontInput = try? AVCaptureDeviceInput(device: self.currentDevice!) {
                 if self.captureSession.canAddInput(frontInput) {
                     self.captureSession.addInput(frontInput)
                 }
