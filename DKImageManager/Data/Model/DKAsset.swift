@@ -33,7 +33,7 @@ open class DKAsset: NSObject {
     /// play time duration(seconds) of a video.
     open private(set) var duration: Double?
     
-    open private(set) var originalAsset: PHAsset?
+    @objc open private(set) var originalAsset: PHAsset?
     
     open var localIdentifier: String
         
